@@ -222,3 +222,10 @@ define archhelp
   echo  '                  (distribution) /sbin/installkernel or'
   echo  '                  install to $$(INSTALL_PATH) and run lilo'
 endef
+
+
+LOCAL_CFLAGS += \
+    -Wall \
+    -Werror \
+    -Wno-unused-function \
+    -Wno-unused-variable
